@@ -337,7 +337,7 @@ namespace ImGuiExt
 
 		Positioning_t* position = &s_Storage.find(currentWindow->ID)->second;
 
-		if (ImGui::BeginPopupContextWindow(aContextMenuName.c_str(), ImGuiPopupFlags_MouseButtonRight))
+		if (ImGui::BeginPopupContextWindow(aContextMenuName.c_str(), ImGuiPopupFlags_MouseButtonRight | ImGuiPopupFlags_NoOpenOverItems))
 		{
 			if (ImGui::BeginMenu("Position"))
 			{
